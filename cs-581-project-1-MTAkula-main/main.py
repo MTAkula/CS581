@@ -130,10 +130,10 @@ def draw_stop_button():
     
     
     
-def is_start_button_clicked():
+def is_stop_button_clicked():
     mouse_pos = pygame.mouse.get_pos()
     mouse_pressed = pygame.mouse.get_pressed()
-    if start_button_x < mouse_pos[0] < start_button_x + 100 and start_button_y < mouse_pos[1] < start_button_y + 50:
+    if stop_button_x < mouse_pos[0] < stop_button_x + 64 and stop_button_y < mouse_pos[1] < stop_button_y + 64:
         if mouse_pressed[0] == 1:
             return True
     return False
