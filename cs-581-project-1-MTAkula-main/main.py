@@ -119,10 +119,10 @@ def is_start_button_clicked():
             return True
     return False
 
-# Start Button
-start_button = pygame.image.load('player.png')
-start_button_x = 350
-start_button_y = 250
+# Stop Button
+stop_button = pygame.image.load('stop.png')
+stop_button_x = 730
+stop_button_y = 10
 
 
 # Game Loop
