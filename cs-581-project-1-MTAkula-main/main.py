@@ -127,7 +127,16 @@ stop_button_y = 10
 
 def draw_stop_button():
     screen.blit(stop_button, (stop_button_x, stop_button_y))
-
+    
+    
+    
+def is_start_button_clicked():
+    mouse_pos = pygame.mouse.get_pos()
+    mouse_pressed = pygame.mouse.get_pressed()
+    if start_button_x < mouse_pos[0] < start_button_x + 100 and start_button_y < mouse_pos[1] < start_button_y + 50:
+        if mouse_pressed[0] == 1:
+            return True
+    return False
 
 
 # Game Loop
