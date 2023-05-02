@@ -77,6 +77,7 @@ def game_over_text():
     screen.blit(over_text, (200, 250))
     score = font.render("Your Score : " + str(score_value), True, (255, 255, 255))
     screen.blit(score, (300,350))
+    draw_stop_button()
 
 
 def player(x, y):
@@ -123,6 +124,10 @@ def is_start_button_clicked():
 stop_button = pygame.image.load('stop.png')
 stop_button_x = 730
 stop_button_y = 10
+
+def draw_stop_button():
+    screen.blit(stop_button, (stop_button_x, stop_button_y))
+
 
 
 # Game Loop
