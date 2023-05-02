@@ -202,6 +202,11 @@ while running:
             for j in range(num_of_enemies):
                 enemyY[j] = 2000
             game_over_text()
+            
+            # Check if stop button clicked
+            if is_stop_button_clicked():
+                running = False
+                
             break
 
         enemyX[i] += enemyX_change[i]
